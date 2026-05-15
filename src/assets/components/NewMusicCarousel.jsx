@@ -8,16 +8,13 @@ const NewMusicCarousel = () => {
         slidesPerView={1.5}
         spaceBetween={20}
         breakpoints={{
-          // Da 768px in su (Desktop / Tablet)
           768: {
-            slidesPerView: 1.5, // Ti consiglio 2.2 così vedi un pezzetto della terza slide anche su desktop!
-            spaceBetween: 25,
+            slidesPerView: 2.2,
           },
         }}
       >
-        {/* SLIDE 1 */}
         <SwiperSlide
-          style={{ height: 400 }}
+          style={{ height: 320 }}
           className="d-flex justify-content-between flex-column"
         >
           <div className="my-1">
@@ -29,16 +26,14 @@ const NewMusicCarousel = () => {
             </h6>
           </div>
           <img
-            className="w-100 rounded-3 object-fit-fill"
-            style={{ height: "280px" }} // Blocchiamo l'altezza dell'immagine per sicurezza
-            src="/public/assets/images/1a.png" // CORRETTO: rimosso /public
+            className="w-100 rounded-3 object-fit-cover"
+            style={{ height: "200px" }}
             alt="Apple Music Chill"
+            src="/public/assets/images/1a.png"
           />
         </SwiperSlide>
-
-        {/* SLIDE 2 */}
-        {/* <SwiperSlide
-          style={{ height: 400 }}
+        <SwiperSlide
+          style={{ height: 320 }}
           className="d-flex justify-content-between flex-column"
         >
           <div className="my-1">
@@ -51,15 +46,13 @@ const NewMusicCarousel = () => {
           </div>
           <img
             className="w-100 rounded-3 object-fit-cover"
-            style={{ height: "280px" }}
-            src="/assets/images/1b.png" // CORRETTO: rimosso /public
+            style={{ height: "200px" }}
+            src="/public/assets/images/1b.png"
             alt="Musica Latina"
           />
-        </SwiperSlide> */}
-
-        {/* SLIDE 3 */}
+        </SwiperSlide>
         {/* <SwiperSlide
-          style={{ height: 300 }}
+          style={{ height: 320 }}
           className="d-flex justify-content-between flex-column"
         >
           <div className="my-1">
@@ -72,8 +65,8 @@ const NewMusicCarousel = () => {
           </div>
           <img
             className="w-100 rounded-3 object-fit-cover"
-            style={{ height: "280px" }}
-            src="/assets/images/1c.png" // CORRETTO: rimosso /public
+            style={{ height: "200px" }}
+            src="/public/assets/images/1c.png"
             alt="Musica Club"
           />
         </SwiperSlide> */}

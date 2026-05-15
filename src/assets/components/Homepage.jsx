@@ -41,7 +41,7 @@ const HomePage = () => {
           <NewMusicCarousel></NewMusicCarousel>
         </Col>
       </Row>
-      {/* <Row>
+      <Row>
         <Col xs={12}>
           <StaticMusicCardWrapper></StaticMusicCardWrapper>
         </Col>
@@ -54,7 +54,7 @@ const HomePage = () => {
       <Row>
         <ExploreList></ExploreList>
       </Row>
-      <Row></Row> */}
+      <Row></Row>
     </Container>
   );
 };

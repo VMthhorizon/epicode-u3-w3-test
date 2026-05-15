@@ -35,7 +35,7 @@ const MusicCardWrapper = (props) => {
       <h3 className="text-start text-white d-flex align-items-center">
         Nuove uscite <CaretRightFill></CaretRightFill>
       </h3>
-      <Row xs={3} md={5} className="g-2">
+      <Row xs={3} md={5} className="g-3">
         {isError ? (
           <h1 className="fs1 text-center">
             NESSUN ARTISTA TROVATO, PROVA DI NUOVO

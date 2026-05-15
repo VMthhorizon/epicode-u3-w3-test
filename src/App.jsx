@@ -11,16 +11,16 @@ function App() {
   return (
     <Container
       fluid
-      className="px-0 d-flex flex-column flex-md-row min-vh-100 bg-black"
+      className="px-0 d-flex flex-column flex-md-row min-vh-100 min-vw-100 bg-black"
     >
-      <header>
+      <header className="flex-shrink-0">
         <MyNavbar></MyNavbar>
       </header>
-      <div>
+      <div className="d-flex flex-column flex-grow-1 min-w-0">
         <main className="flex-grow-1">
           <HomePage></HomePage>
         </main>
-        <footer>
+        <footer fluid>
           <MyFooter></MyFooter>
         </footer>
       </div>

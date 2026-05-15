@@ -12,7 +12,11 @@ import Navbar from "react-bootstrap/Navbar";
 function MyNavbar() {
   return (
     <Container fluid>
-      <Navbar expand="md" data-bs-theme="dark">
+      <Navbar
+        className="d-flex flex-row flex-md-column align-items-md-start"
+        expand="md"
+        data-bs-theme="dark"
+      >
         <Navbar.Toggle
           className="text-danger"
           aria-controls="basic-navbar-nav"
@@ -26,10 +30,10 @@ function MyNavbar() {
         <NavbarText className="text-danger">Accedi</NavbarText>
 
         <Navbar.Collapse className="text-danger" id="basic-navbar-nav">
-          <Nav className="me-auto" className="text-danger">
+          <Nav className="me-auto d-flex flex-row flex-md-column ">
             <Nav.Link
               href="#search"
-              className="d-flex align-items-center gap-1"
+              className="d-flex align-items-center gap-1 align-items-start"
             >
               <Search></Search> Cerca
             </Nav.Link>

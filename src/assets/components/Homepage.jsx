@@ -11,8 +11,8 @@ const HomePage = () => {
 
   return (
     <Container fluid className="d-flex flex-column gap-5 ">
-      <Row>
-        <Col xs={12} md={6}>
+      <Row className="d-flex justify-content-center">
+        <Col xs={12} md={11}>
           {/* SEARCHBAR */}
           <Form
             onSubmit={(e) => {

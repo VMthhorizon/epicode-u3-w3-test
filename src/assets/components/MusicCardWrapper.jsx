@@ -41,9 +41,9 @@ const MusicCardWrapper = (props) => {
             NESSUN ARTISTA TROVATO, PROVA DI NUOVO
           </h1>
         ) : (
-          arrSongs?.data.slice(0, 6).map((elem) => {
+          arrSongs?.data.slice(0, 6).map((elem, i) => {
             return (
-              <Col key={elem.id}>
+              <Col key={elem.id} className={i === 5 ? "d-md-none" : ""}>
                 <MusicCard elem={elem} />
               </Col>
             );

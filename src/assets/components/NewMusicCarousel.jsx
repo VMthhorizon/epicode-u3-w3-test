@@ -2,7 +2,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 
 const NewMusicCarousel = () => {
   return (
-    <>
+    <div className="w-100 overflow-hidden">
       <h1 className="fs-1 fw-bolder text-light text-start mb-3">Novità</h1>
       <Swiper
         slidesPerView={1.5}
@@ -29,7 +29,7 @@ const NewMusicCarousel = () => {
             className="w-100 rounded-3 object-fit-cover"
             style={{ height: "200px" }}
             alt="Apple Music Chill"
-            src="/public/assets/images/1a.png"
+            src="/assets/images/1a.png"
           />
         </SwiperSlide>
         <SwiperSlide
@@ -47,11 +47,11 @@ const NewMusicCarousel = () => {
           <img
             className="w-100 rounded-3 object-fit-cover"
             style={{ height: "200px" }}
-            src="/public/assets/images/1b.png"
+            src="/assets/images/1b.png"
             alt="Musica Latina"
           />
         </SwiperSlide>
-        {/* <SwiperSlide
+        <SwiperSlide
           style={{ height: 320 }}
           className="d-flex justify-content-between flex-column"
         >
@@ -66,12 +66,12 @@ const NewMusicCarousel = () => {
           <img
             className="w-100 rounded-3 object-fit-cover"
             style={{ height: "200px" }}
-            src="/public/assets/images/1c.png"
+            src="/assets/images/1c.png"
             alt="Musica Club"
           />
-        </SwiperSlide> */}
+        </SwiperSlide>
       </Swiper>
-    </>
+    </div>
   );
 };
 export default NewMusicCarousel;

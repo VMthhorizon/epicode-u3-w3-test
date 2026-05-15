@@ -16,7 +16,7 @@ function App() {
       <header className="flex-shrink-0">
         <MyNavbar></MyNavbar>
       </header>
-      <div className="d-flex flex-column flex-grow-1 min-w-0">
+      <div className="d-flex flex-column flex-grow-1 min-w-0 overflow-hidden">
         <main className="flex-grow-1">
           <HomePage></HomePage>
         </main>
